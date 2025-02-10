@@ -1,6 +1,126 @@
+
+
 .navbar-brand img {
     width: 229px;
     height: 46px;
+}
 
+nav ul {
+    display: flex;
+    list-style: none; /* Видаляє маркери списку */
+    padding: 0;
+    margin: 10px;
+}
 
+nav ul li {
+    margin-right: 40px; /* Відступ між елементами */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Видаляє зайвий відступ у останнього елемента */
+}
+.navbar-nav .nav-link.btn {
+    background-color: blue; /* Синій фон */
+    color: white; /* Білий текст */
+    border: none; /* Видаляємо рамку */
+    padding: 16px 20px; /* Внутрішні відступи */
+    border-radius: 20px; /* Закруглені краї */
+    text-align: center; /* Вирівнювання тексту */
+    font-size: 18px; /* Розмір тексту */
+    cursor: pointer; /* Змінює курсор на вказівник */
+    text-decoration: none; /* Видаляє підкреслення */
+}
+
+.navbar-nav .nav-link.btn:hover {
+    background-color: darkblue; /* Темно-синій фон при наведенні */
+}
+/* Загальний стиль для секції */
+.diagnostic-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 20px; /* Верхній та бокові відступи 40px, нижній — 20px */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.text-content .highlight {
+    color: #007bff; /* Синій колір */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-content {
+    max-width: 45%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; /* Кругле зображення */
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Секція зі статистикою */
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Вирівнювання по центру */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-card:not(:last-child) {
+    border-right: 1px solid #444;
+}
+
+.stat-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.stat-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #aaa;
 }
