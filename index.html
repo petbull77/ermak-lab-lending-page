@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,19 +8,32 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
+
+
 <body>
 
 <header role="banner">
-    <nav class="navbar navbar-expand-md ">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <button class="navbar-toggler menu-toggle" id="menuToggle" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                ☰
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-            <div class="collapse navbar-collapse" id="navbarsExample05">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Логотип">
+            </a>
+
+            <ul class="navbar-nav ms-auto desktop-none">
+                <li class="nav-item">
+                    <a class="nav-link btn" href="#">Звʼяжіться з нами</a>
+                </li>
+            </ul>
+
+            <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto ps-lg-5">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Головна</a>
@@ -28,25 +41,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Послуги</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#">Чому ми?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакти</a>
                     </li>
+                    <li class="nav-item desktop-none">
+                        <a class="nav-link" href="#" id="closeNav">
+                            <img src="img/close.png" class="close-button">
+                        </a>
+                    </li>
+
                 </ul>
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mobile-none">
                     <li class="nav-item">
-                        <a class="nav-link btn  " href="#">Звʼяжіться з нами</a>
+                        <a class="nav-link btn" href="#">Звʼяжіться з нами</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
 </header>
+
+
 <div class="diagnostic-section container">
 
     <div class="text-content">
@@ -60,21 +79,175 @@
         <img src="img/microscope.png" alt="Лабораторія">
     </div>
 </div>
-
-<div class="stats-section container">
-    <div class="stat-card">
-        <h2>12000+</h2>
-        <p>Зроблених тестів</p>
-    </div>
-    <div class="stat-card">
-        <h2>12+</h2>
-        <p>Років досвіду</p>
-    </div>
-    <div class="stat-card">
-        <h2>600+</h2>
-        <p>Локацій</p>
+<div class="stats-section-container">
+    <div class="stats-section container">
+        <div class="stat-card">
+            <h2>12000+</h2>
+            <p>Зроблених тестів</p>
+        </div>
+        <div class="stat-card">
+            <h2>12+</h2>
+            <p>Років досвіду</p>
+        </div>
+        <div class="stat-card">
+            <h2>600+</h2>
+            <p>Локацій</p>
+        </div>
     </div>
 </div>
+<div class="card-package-section">
+    <div class="container card-package">
+        <h2 class="text-center card-package-main-title">Пакети послуг</h2>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title-price">1500 грн</h4>
+                        <h5 class="card-title">Обстеження організму – обов’язково</h5>
+                        <p class="card-text">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень цукру в
+                            крові та 5 інших.</p>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Пост не потрібен</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Звіт за 48 годин</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Онлайн і фізичний звіт</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="btn btn-primary second-more-button">Дізнатися більше &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title-price">1500 грн</h4>
+                        <h5 class="card-title">Обстеження організму – обов’язково</h5>
+                        <p class="card-text">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень цукру в
+                            крові та 5 інших.</p>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Пост не потрібен</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Звіт за 48 годин</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Онлайн і фізичний звіт</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="btn btn-primary second-more-button">Дізнатися більше &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title-price">1500 грн</h4>
+                        <h5 class="card-title">Обстеження організму – обов’язково</h5>
+                        <p class="card-text">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень цукру в
+                            крові та 5 інших.</p>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Пост не потрібен</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Звіт за 48 годин</p>
+                        </div>
+                        <div class="success-container">
+                            <img src="img/success-icon.svg" alt="success icon">
+                            <p>Онлайн і фізичний звіт</p>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="btn btn-primary second-more-button">Дізнатися більше &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card-why-we-section">
+    <div class="container card-why-we">
+        <h2 class="text-center card-package-main-title">Чому обирають нас?</h2>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%201.png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%202.png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%201(1).png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%202(1).png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%201(2).png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/microscope%201(3).png">
+                        <h5 class="card-title-why-we">Обстеження організму – обов’язково</h5>
+                        <p class="card-text-why-we">8 тестів - загальний аналіз крові з ШОЕ, аналіз печінки, рівень
+                            цукру в крові та 5 інших.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <section class="contact-section  ">
     <div class="card-package container">
         <div>
@@ -133,34 +306,92 @@
                     </div>
                 </div>
 
-                <div class="form-group full-width">
+                <div class="form-group full-width send-message">
                     <label for="message">Повідомлення</label>
                     <textarea id="message" placeholder="Напишіть тут повідомлення"></textarea>
                 </div>
-                <button class="submit-btn">Надіслати
-                     <span class="arrow">→</span>
-                </button>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary second-more-button">Надіслати →</a>
+                </div>
             </form>
 
         </div>
     </div>
 </section>
 
-<!-- ДОДАЙТЕ JAVASCRIPT ПЕРЕД </body> -->
-<script>
-    function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("show");
-    }
+<footer class="text-lg-start text-white">
+    <div class="container my-5">
+        <div class="container p-4">
+            <div class="row my-4">
 
+                <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+
+                    <ul class="list-unstyled footer-list-icons">
+                        <li>
+                            <a><i class="fa fa-phone" aria-hidden="true"></i>+9999 99 9999</a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-map-marker" aria-hidden="true"></i>Київ, Україна</a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-envelope" aria-hidden="true"></i>abc@gmail.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <ul class="list-unstyled footer-list-about">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white">Про нас</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white">Послуги</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white">Чому ми?</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0 ">
+                    <ul class="list-unstyled list-icons-socials">
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-white"><i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#closeNav").click(function (event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+            $("#navbarNavAltMarkup").collapse("hide"); // Закрываем меню с анимацией Bootstrap
+        });
+    });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+
 </body>
 </html>
